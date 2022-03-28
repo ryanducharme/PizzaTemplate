@@ -1,15 +1,16 @@
 #menu {
-    max-width: 70%;
-    /* text-align: center; */
     margin: auto;
-    /* background-color: green; */
-    background-color: black;
+    max-width: 100%;
+    background-image: url('assets/filtered pizza.jpg');
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .menu-header {
+    margin-top: 30px;
     color: goldenrod;
-    /* border-right: 5px solid gold; */
-    /* display: inline-block; */
+    text-align: center;
     font-size: 4rem;
 }
 
@@ -22,35 +23,49 @@ tr {
 }
 
 .menu-grid {
-    display: grid;
-    /* text-align: center; */
-    grid-template-columns: 1fr 1fr;
-}
-
-.menu-grid-col1 {
-    grid-column: 1;
-    color: white;
-    font-size: 1.25rem;
-}
-
-.menu-grid-col2 {
-    grid-column: 2;
-    font-size: 1.25rem;
-    color: white;
-}
-
-@media only screen and (max-width: 800px) {
-    .menu-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .menu-grid-col1 {
-        grid-column: 1;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     
-    .menu-grid-col2 {
-        grid-row: 2;
-        grid-column: 1;
-    }   
+}
+
+.menu-grid-item {
+    color: white;
+    font-size: 1.25rem;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#menu>div>div>table {
+    width: 100%;
+}
+
+#menu>div>div>table>tbody>tr {
+    text-align: left;
+}
+
+#menu>div>div>table>tbody>tr>td+td {
+    text-align: left;
+}
+
+#menu>div>div>table>tbody>tr>td:nth-child(2) {
+    min-width: 150px;
+}
+
+.menu-item-name {
+    /* background-color: red; */
+    font-size: 2rem;
+    color: goldenrod;
+    
+    text-align: left;
+}
+
+.menu-item-price-list {
+    text-align: right;
+}
+
+
+@media only screen and (min-width: 1480px) {
+
 }

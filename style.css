@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    max-width: 1820px;
+    max-width: 1920px;
     margin: auto;
 }
 
@@ -31,7 +31,7 @@ a:visited {
 }
 
 main {
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     grid-column: 1 / span all;
     /* height: 80%; */
 }
@@ -220,6 +220,12 @@ i {
     justify-content: center;
 
 }
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
 
