@@ -14,6 +14,7 @@
     font-size: 4rem;
 }
 
+
 td {
     padding: 10px;
 }
@@ -65,6 +66,7 @@ tr {
 .menu-item-price-list {
     text-align: right;
 }
+
 
 
 @media only screen and (min-width: 1480px) {
